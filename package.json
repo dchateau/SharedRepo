@@ -1,0 +1,20 @@
+{
+  "name": "slangchallenge",
+  "version": "1.0.0",
+  "description": "My solution for the proposed challenge at Slang. Engineering intern.",
+  "main": "slangChallenge.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
