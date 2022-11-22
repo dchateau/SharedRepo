@@ -117,7 +117,7 @@ const groupRelatedActivities = (relatedActivities, activities) => {
         ended_at: activities[i].ended_at,
         started_at: activities[i].started_at,
         activity_ids: activityIds,
-        duration_seconds: parseFloat(elapsedTime / 1000),
+        duration_seconds: (elapsedTime / 1000).toFixed(1),
       };
       groupedActivities.push(activity);
       activityIds = [];
@@ -141,7 +141,7 @@ const groupRelatedActivities = (relatedActivities, activities) => {
         ended_at: endDate,
         started_at: startDate,
         activity_ids: activityIds,
-        duration_seconds: parseFloat(elapsedTime / 1000),
+        duration_seconds: (elapsedTime / 1000).toFixed(1),
       };
       groupedActivities.push(activity);
       activityIds = [];
@@ -224,7 +224,7 @@ axios
 
 /**
  * Complexity of the developed algorithm
- * In line XX where we relate the activities to a user the complexity reaches
+ * In line 174 where we relate the activities to a user the complexity reaches
  * O(n) linear complexity. Since we have to go through all of the elements of the
  * activities array. Sorting the array of activities for a user reaches the O(n log n)
  * logarithmic order. Since we're using Chrome's V8 engine for runtime execution,
